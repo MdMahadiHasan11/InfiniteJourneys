@@ -1,3 +1,318 @@
-h1{
-    background-color: blue;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+    max-width: 1350px;
+    margin: 0px auto;
+    border:4px brown solid;
+}
+header,main{
+    padding: 0 4.7rem;
+}
+.primary-btn{
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    color:var(--primary-color);
+    text-align: center;
+    max-height: 52px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background: #FF5400;
+}
+:root{
+    --primary-color:#FFF;
+}
+/* banner style here */
+.banner{
+    border: 5px red solid;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    background-image:url('images/Group\ 13\ \(1\)\ \(1\).png');
+    text-align: center;
+    border-radius: 1rem;
+    height: 500px;
+}
+
+.banner-header{
+    color:var(--primary-color);
+    font-size: 4rem;
+    font-weight: 800;
+    /* padding: 6.25rem 17.4rem 1.5rem; */
+    max-width:70%;
+    margin: 100px auto 20px;
+}
+.banner-description{
+    color:var(--primary-color);
+    margin: 0 auto 45px;
+    font-size: 1rem;
+    font-weight: 400;
+    /* padding: 0 14rem; */
+    max-width:80%;
+}
+.banner-input input{    
+    padding: 1rem;
+    margin: 1rem 0;
+    max-height: 52px;
+    color: rgba(19, 19, 24, 0.50);
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 8px;
+    background:var(--primary-color);
+    border: none;
+
+}
+.banner-input{
+    background: rgba(255, 255, 255, 0.30);
+    display: flex;
+    /* padding: 50px auto 12px; */
+    gap:1.5rem;
+    max-width:80%;
+    margin: 0 auto 105px;
+    /* border: 5px black solid; */
+    border-radius: 8px;
+
+}
+
+/* popular section style here */
+
+.popular-tour{
+    
+    display: flex;
+    margin: 100px auto;
+    gap: 50px;
+}
+.popular-text{
+    max-width: calc((100% - 50px)/2);
+}
+.popular-img{
+    max-width: calc((100% - 50px)/2);
+}
+.popular-img img{
+    width: 100%;
+}
+.popular-header{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.popular-description,.popular-description ul li{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 25px auto;
+}
+.popular-end-description{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 25px auto 32px;
+}
+.list{
+    list-style-position: outside;
+    margin-left: 30px;
+    /* list-style-position: inside; */
+    /* background-color: #FF5400; */
+}
+/* popular section end */
+
+
+/* destination section start here */
+.destination-header{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.destination-description{
+    color: rgba(19, 19, 24, 0.70);
+    max-width: 60%;
+    margin: 24px auto 50px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.destination-img-container .row{
+    max-height: 300px;
+    display: flex;
+    margin: 24px auto;
+    justify-content:center;
+    gap: 15px;
+}
+.destination-img-container img{
+    width: 100%;
+}
+
+
+.destination-img-container .row p{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.destination-img-container .country{
+    position: relative;
+}
+.destination-img-container p{
+    position: absolute;
+    left: 30%;
+    bottom: 45%;
+    z-index: 1;
+}
+
+/* destination section end here */
+
+/* why-choose section start here */
+.why-choose-header{
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.why-choose-description{
+    color: rgba(19, 19, 24, 0.70);
+    max-width: 60%;
+    margin: 45px auto 20px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    }
+
+.why-choose-card .card{
+   
+    /* height: 285px; */
+    max-width: calc((100% - 24px)/2);
+     padding:32px;
+    border-radius: 16px;
+    /* margin: 12px auto; */
+    /* background-color: #FF5400; */
+}
+.why-choose-icon{
+    font-size: 3rem;
+}
+.why-choose-card-header{
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+.why-choose-card-description{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+}
+#card-1{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+#card-2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+#card-3{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.why-choose-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 24px;
+    justify-content: center;
+}
+/* why-choose section end here */
+
+/* mobile phone */
+@media screen and (max-width:600px) {
+    .banner-input{
+        /* padding: 50px auto 12px; */
+        flex-direction: column;
+        gap:1.5rem;
+        max-width:100%;
+        margin:0 20px 30px;
+        /* border: 5px black solid; */
+    
+    }
+    .banner-header{
+        font-size: 1.3rem;
+        font-weight: 800;
+    /* padding: 6.25rem 17.4rem 1.5rem; */
+        max-width:98%;
+        margin: 30px auto 9px;
+    }
+
+    .banner-description{
+        margin-bottom:30px;
+        font-size: .8rem;
+        font-weight: 400;
+        /* padding: 0 14rem; */
+        max-width:98%;
+    }
+
+    .banner-input input{    
+        padding:16px;
+        /* margin: 16px; */
+        gap: 16px;
+        font-size: 1rem;
+        font-weight: 400;
+        border-radius: 8px;
+    
+    }
+
+    /* popular */
+    .popular-tour{
+    
+        flex-direction: column;
+        margin: 50px auto;
+        gap: 10px;
+    }
+    .popular-text{
+        max-width: 100%;
+    }
+    .popular-img{
+        max-width:100%;
+    }
+
+    /* destination */
+
+    .destination-img-container .row{
+        flex-direction: column;
+        max-height:100%;
+        margin: 15px auto;
+        justify-content:center;
+        /* gap: 15px; */
+    }
+    .destination-header{
+        font-size: 1.25rem;
+    }
+    .destination-description{
+        max-width: 98%;
+        margin: 15px auto;
+        font-size: .8rem;
+    
+    }
+    
+
+    /* card */
+    .why-choose-card{
+        flex-direction: column;
+        row-gap: 24px;
+        column-gap:auto;
+    }
+   
+    .why-choose-card .card{
+   
+        max-width: 98%;
+        padding:16px;
+    }
+    .why-choose-description{
+        max-width: 96%;
+    }
 }

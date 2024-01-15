@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>InfiniteJournys</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/travel.png" type="image/x-icon">
@@ -10,13 +17,141 @@
 <body>
     <!-- Header start -->
     <header>
-        <h1>HASAN</h1>
+        <nav></nav>
+
+        <!-- Banner section here -->
+        <div class="banner">
+            <div class="banner-text">
+                <p class="banner-header">Explore Your Travel</p>
+                <p class="banner-description"> Whether you're looking for feel free to let me know how I can assist you with your travel inquiries</p>
+            </div>
+            <div class="banner-input">
+                <input  placeholder="Where go" type="text" style="margin-left: 1rem;" required>
+                <input placeholder="When" type="text" required>
+                <input placeholder="Select Type" type="search" required>
+                <button class="primary-btn"><i class="fa-solid fa-magnifying-glass-location" style="margin-right: 8px;"></i>Find Now</button>
+            </div>
+        </div>
+        <!-- banner end -->
+
     </header>
     <!-- header end -->
 
+
+
     <!-- main start -->
     <main>
+        <!-- popular tour section start -->
+        <section class="popular-tour">
+            <div class="popular-text">
+                <p class="popular-header">Our Popular Tours</p>
+                    <p class="popular-description">          
+                         Explore the highlights of famous cities, bus tours, or even boat tours in waterfront cities.
+                    </p> 
+                    <ul class="list">
+                        <li>
+                            <p>Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque diam. Sociis erat at .</p>
+                        </li>
+                        <li>
+                            <p>
+                                Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
+                            </p>
+                        </li>
+                        <li>
+                        <p>
+                                Amet consectetur. Vulputate commodo felis molestie risus 
+                            ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. 
+                        </p>
+                        </li>
+                    </ul>
+                <p class="popular-end-description">
+                    Amet consectetur. Vulputate commodo felis molestie risus 
+                    ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus semper tincidunt. 
+                </p>
+                <button class="primary-btn">Read More</button>   
+            </div>
+            <div class="popular-img">
+                <img src="images/Rectangle 4.png" alt="mountaint">
+            </div>
+        </section>
+        <!-- popular section end -->
 
+        <!-- destination section start  -->
+        <section class="destination">
+            <div class="destination-text">
+                <h3 class="destination-header">Choose Your Destination</h3>  
+                <p class="destination-description">If you don't have a specific place in mind, I can suggest popular travel destinations based on different criteria such as adventure, culture, relaxation, etc. Let me know your preferences, and I'll be happy to help!</p>
+            </div>
+            <div class="destination-img-container">
+                <div class="row">
+                    <div class="country">
+                        <img src="images/Rectangle 5.png" alt="">
+                        <p>Maldives</p>
+                    </div>
+                    <div class="country">
+                        <img src="images/Rectangle 8.png" alt="">
+                        <p>Indonesia</p>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="country">
+                        <img src="images/Rectangle 6.png" alt="">
+                        <p>Srilanka</p>
+                    </div>
+                    <div class="country">
+                        <img src="images/Rectangle 7.png" alt="">
+                        <p>North America</p>
+                    </div>
+                    <div class="country">
+                        <img src="images/Rectangle 9.png" alt="">
+                        <p>Kashmir</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="country">
+                        <img src="images/Rectangle 11.png" alt="">
+                        <p>Bangladesh</p>
+                    </div>
+                    <div class="country">
+                        <img src="images/Rectangle 10.png" alt="">
+                        <p>Bandarban</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- destination section end -->
+
+        <!-- section why-choose start -->
+        <section class="why-choose">
+            <div class="why-choose-text">
+                <p class="why-choose-header">
+                    Why Choose Us
+                </p>
+                <p class="why-choose-description">
+                    Competitive pricing and value-added services can be a significant factor. Travelers often compare pricesto determine the overall value for money.
+                </p>
+            </div>
+            <div class="why-choose-card">
+                <div class="card" id="card-1">
+                    <div class="why-choose-icon"><i class="fa-solid fa-hotel"></i></div>
+                    <p class="why-choose-card-header">Handpicked Hotels</p>
+                    <p class="why-choose-card-description">Travel agencies, boutique hotel collections, and online platforms specializing in high-end accommodations often use the term "handpicked hotels" exclusivity and special nature of their offerings.</p>
+                </div>
+                <div class="card" id="card-2">
+                    <div class="why-choose-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <p class="why-choose-card-header">World Class Service</p>
+                    <p class="why-choose-card-description">Putting the customer at the center of every decision is crucial. Understanding and anticipating their needs, preferences, and concerns can lead to a more personalized and satisfying experience</p>
+                </div>
+                <div class="card" id="card-3">
+                    <div class="why-choose-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
+                    <p class="why-choose-card-header">Best Price Guarantee</p>
+                    <p class="why-choose-card-description">Clear and prompt communication is essential, from booking confirmations and itinerary details to updates on any changes or disruptions. Keeping customers informed helps manage expectations .</p>
+                </div>
+            </div>
+        </section>
+        <!-- why-choose section end -->
     </main>
     <!-- main end -->
 
