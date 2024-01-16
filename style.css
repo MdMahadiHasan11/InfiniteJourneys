@@ -7,7 +7,6 @@ body{
     font-family: 'Mulish', sans-serif;
     max-width: 1350px;
     margin: 0px auto;
-    border:4px brown solid;
 }
 header,main{
     padding: 0 4.7rem;
@@ -28,23 +27,78 @@ header,main{
 :root{
     --primary-color:#FFF;
 }
+
+/* nav section here */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+}
+.logo{
+    display: flex;
+    /* align-items: center; */
+    /* flex-direction:column; */
+}
+.logo p{
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+    }
+.logo-style{
+        font-style: italic;
+        color: #FF5400;
+
+    }
+
+    .nav-container li{
+        list-style-type: none;
+    }
+    .nav-container ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 44px;
+    }
+    .nav-container #menubar{
+        display: none;
+        font-size: 25px;
+    }
+    .nav-container ul li a , .nav-container > a{
+        list-style-type: none;
+        text-decoration: none;
+        color:  #424247;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .nav-container .home{
+        color: #FF5400;
+    }
+    
+/* nav end */
+
 /* banner style here */
 .banner{
-    border: 5px red solid;
+    height: 500px;
+    width: 100%;
+    display: flex;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
     background-image:url('images/Group\ 13\ \(1\)\ \(1\).png');
+    background-size:cover;
     text-align: center;
     border-radius: 1rem;
-    height: 500px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .banner-header{
     color:var(--primary-color);
     font-size: 4rem;
     font-weight: 800;
-    /* padding: 6.25rem 17.4rem 1.5rem; */
-    max-width:70%;
-    margin: 70px auto 20px;
+    margin: 75px auto 20px;
+   
 }
 .banner-description{
     color:var(--primary-color);
@@ -347,6 +401,16 @@ footer hr{
 
 /* mobile phone */
 @media screen and (max-width:600px) {
+
+    /* nav start */
+    .nav-container ul li{
+        display: none;
+
+    }
+    .nav-container #menubar{
+        display:inline;
+    }
+    /* nav end */
     .banner-input{
         flex-direction: column;
         max-width:100%;

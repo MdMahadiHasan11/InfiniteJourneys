@@ -17,30 +17,50 @@
 <body>
     <!-- Header start -->
     <header>
-        <nav></nav>
+        <nav>
+            <div class="logo">
+                <div>
+                    <img src="images/Group 40071 (2).png" alt="">
+                </div>
+                <p>Infinite <span class="logo-style">Journeys</span></p>
+            </div>
+            <div class="nav-container">
+                 <a href=""><i  class="fa-solid fa-bars" id="menubar"></i></a>
+                <ul>
+                    <li><a class="home" href="">Home</a></li>
+                    <li><a href="">Packages</a></li>
+                    <li><a href="">Testimonial</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- Banner section here -->
         <div class="banner">
-            <div class="banner-text">
-                <p class="banner-header">Explore Your Travel</p>
-                <p class="banner-description"> Whether you're looking for feel free to let me know how I can assist you with your travel inquiries</p>
+            <div class="banner-content">
+                <div class="banner-text">
+                    <p class="banner-header">Explore Your Travel</p>
+                    <p class="banner-description"> Whether you're looking for feel free to let me know how I can assist you with your travel inquiries</p>
+                </div>
+                <div class="input-section">
+                    <form class="banner-input" action="">
+                    <input  placeholder="Where go" type="text" required>
+                    <select id="time">
+                        <option value="time">When</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                    <select id="select-type">
+                        <option value="select-type">Select Type</option>
+                        <option value="plane">Plane</option>
+                        <option value="bus">Bus</option>
+                    </select>
+                    <button class="primary-btn"><i class="fa-solid fa-magnifying-glass-location" style="margin-right: 8px;"></i>Find Now</button>
+                </form>
+                </div>
             </div>
-            <div class="input-section">
-                <form class="banner-input" action="">
-                <input  placeholder="Where go" type="text" required>
-                <select id="time">
-                    <option value="time">When</option>
-                    <option value="2023">2023</option>
-                    <option value="2024">2024</option>
-                </select>
-                <select id="select-type">
-                    <option value="select-type">Select Type</option>
-                    <option value="plane">Plane</option>
-                    <option value="bus">Bus</option>
-                </select>
-                <button class="primary-btn"><i class="fa-solid fa-magnifying-glass-location" style="margin-right: 8px;"></i>Find Now</button>
-            </form>
-            </div>
+            
             
         </div>
         <!-- banner end -->
@@ -191,7 +211,7 @@
     <footer>
         <div class="footer-header">
             <img src="images/Group 40071 (2).png" alt="">
-            <p>Infinite<span style="color: #FF5400;"> Journeys</span></p>
+            <p>Infinite<span class="logo-style"> Journeys</span></p>
         </div>
         <div class="footer-description">
             Attention to details such as high-quality bedding, amenities, and room service contributes to a world-class stay.
