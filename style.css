@@ -17,11 +17,12 @@ header,main{
     margin: 1rem 0;
     color:var(--primary-color);
     text-align: center;
-    max-height: 52px;
+    width: 100%;
     font-size: 1rem;
     font-weight: 700;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
     background: #FF5400;
 }
 :root{
@@ -43,40 +44,40 @@ header,main{
     font-weight: 800;
     /* padding: 6.25rem 17.4rem 1.5rem; */
     max-width:70%;
-    margin: 100px auto 20px;
+    margin: 70px auto 20px;
 }
 .banner-description{
     color:var(--primary-color);
-    margin: 0 auto 45px;
+    margin: 0 auto 30px;
     font-size: 1rem;
     font-weight: 400;
     /* padding: 0 14rem; */
-    max-width:80%;
+    max-width:85%;
 }
-.banner-input input{    
+.banner-input input[type=text] ,select{  
+    width:100%; 
     padding: 1rem;
     margin: 1rem 0;
-    max-height: 52px;
+    display: inline-block;
     color: rgba(19, 19, 24, 0.50);
     font-size: 1rem;
     font-weight: 400;
     border-radius: 8px;
     background:var(--primary-color);
     border: none;
-
+    box-sizing: border-box;
 }
 .banner-input{
-    background: rgba(255, 255, 255, 0.30);
     display: flex;
-    /* padding: 50px auto 12px; */
-    gap:1.5rem;
-    max-width:80%;
+    flex-direction: row;
+    column-gap: 10px;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.30);
     margin: 0 auto 105px;
-    /* border: 5px black solid; */
     border-radius: 8px;
+    padding: 16px;
 
 }
-
 /* popular section style here */
 
 .popular-tour{
@@ -232,7 +233,7 @@ header,main{
 
 
 /* newsletter section style here */
-form{
+.news-form{
     display: flex;
     flex-direction: column;
     padding: 40px 40px 24px;
@@ -309,7 +310,7 @@ footer{
     flex-direction: column;
     align-items: center; */
     text-align: center;
-    padding: 110px 300px;
+    padding: 110px 250px;
     background: rgba(19, 19, 24, 0.05);
 
 }
@@ -329,13 +330,13 @@ footer{
     font-weight: 400;
     margin: 15px auto 25px;
 }
-.footer-icon{
+.footer-icon i{
     font-size: 2rem;
-    margin:0 35px;
+    margin:0 15px;
 }
 footer hr{
     background: rgba(19, 19, 24, 0.10);
-    margin: 50px;
+    margin: 50px auto;
 }
 .copy-right{
     color: #131318;
@@ -347,38 +348,34 @@ footer hr{
 /* mobile phone */
 @media screen and (max-width:600px) {
     .banner-input{
-        /* padding: 50px auto 12px; */
         flex-direction: column;
-        gap:1.5rem;
         max-width:100%;
         margin:0 20px 30px;
-        /* border: 5px black solid; */
     
     }
     .banner-header{
         font-size: 1.3rem;
         font-weight: 800;
-    /* padding: 6.25rem 17.4rem 1.5rem; */
         max-width:98%;
-        margin: 30px auto 9px;
+        margin: 25px auto 9px;
     }
 
     .banner-description{
-        margin-bottom:30px;
+        margin-bottom:20px;
         font-size: .8rem;
         font-weight: 400;
-        /* padding: 0 14rem; */
         max-width:98%;
     }
 
-    .banner-input input{    
-        padding:16px;
-        /* margin: 16px; */
-        gap: 16px;
+    .banner-input input,select{    
         font-size: 1rem;
         font-weight: 400;
         border-radius: 8px;
     
+    }
+    .banner-input{
+        gap:0;
+        margin-bottom: 15px;
     }
 
     /* popular */
@@ -443,5 +440,18 @@ footer hr{
         width: 100%;
     }
 
+    /* footer */
+
+    footer{
+        padding:30px;
+    
+    }
+    .footer-header{
+        font-size: 1.25rem;
+
+    }
+    .footer-description{
+        font-size: .8rem;
+    }
 }
 
