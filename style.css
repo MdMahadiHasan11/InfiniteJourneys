@@ -83,6 +83,7 @@ nav{
     height: 500px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
     background-image:url('images/Group\ 13\ \(1\)\ \(1\).png');
     background-size:cover;
